@@ -1,2 +1,2 @@
 # 01_jQuery
-jQueryアプリケーション
+jQueryアプリケーションの練習
