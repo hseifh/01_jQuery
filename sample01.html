@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja"> <!-- 日本語 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+    <div id="message">HTMLで書く</div>
+    <div class="box">boxクラスです</div>
+    
+    <script src="jquery.min.js">HTMLで書いてます</script> <!-- jqueryを取り込む -->
+    <script>
+        $('#message').html('jQueryで書き換えました');
+        $('div').html('jQueryで書き換えました');
+
+        //document.getElementById('message').innerHTML = 'なまJSで書き換えました'
+        //document.querySelector('.box').innerHTML = 'querySelectorを使用'
+    </script>
+    <!-- $ jQueryを使います -->
+</body>
+</html>
