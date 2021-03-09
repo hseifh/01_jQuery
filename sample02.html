@@ -21,7 +21,12 @@
         //バニラJS
         //document.querySelector('.box').style.backgroundColor = '#acf'
         
-        $('div').filter('.box').html('★').css('background-color','#fcc');
+        $('div').css('margin-top','20px')
+        .filter('.box').html('★').css('background-color','#fcc')
+        .end().css('margin-left','10px')
+        //html() 中の文字列を書き換える
+        //css('margin-top','20px')  トップに20pxを追加
+        //end()最初に戻す
 
     </script>
     <!-- $ jQueryを使います -->
