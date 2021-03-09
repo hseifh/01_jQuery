@@ -12,8 +12,14 @@
     
     <script src="jquery.min.js">HTMLで書いてます</script> <!-- jqueryを取り込む -->
     <script>
-        $('div').css('background-color','#fcc');
+        //$('div').filter('.box').add('#message').css('background-color','#fcc'); //バックグラウンドカラーを'#fcc'色に
+        //filter=対象限定 add対象追加
 
+        //$('#message').next().css('background-color','#fcc');
+        //next  '#message'の次の項目を色付け
+
+        //バニラJS
+        document.querySelector('.box').style.backgroundColor = '#acf'
         
     </script>
     <!-- $ jQueryを使います -->
