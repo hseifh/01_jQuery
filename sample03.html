@@ -44,9 +44,11 @@
         })
 
         //スライドボタン
-        $('slide')
+        $('#slide')
         .on('click',function(){
-            $('.box').slideUp();
+            //$('.box').slideUp();
+            //$('.box').slideDown();
+            $('.box').slideToggle();
         })
 
     </script>
