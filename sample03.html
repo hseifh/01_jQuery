@@ -13,14 +13,25 @@
             padding: 10px; 
         }
     </style>
+    <!-- padding縦横のマージン -->
 </head> 
 <body>
+
     <div>
         <button id="fadeOut">fadeOut</button>
     </div>
 
     <div class="box">box</div>
 
-    
+    <script src="jquery.min.js"></script> <!-- jqueryを取り込む -->
+    <script>
+        $('#fadeOut')
+        .on('click',function(){
+            $('.box').fadeOut(5000,　function(){ //boxを隠します(5秒)
+                alert('終わったよ');
+            });
+        })
+    </script>
+
 </body>
 </html>
