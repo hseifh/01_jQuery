@@ -27,32 +27,28 @@
 
     <script src="jquery.min.js"></script> <!-- jqueryを取り込む -->
     
-    //フェードアウトボタン
     <script>
+
+        //フェードアウトボタン
         $('#fadeOut')
         .on('click',function(){
             $('.box').fadeOut(5000,　function(){ //boxを隠します(5秒)
                 alert('終わったよ'); //alertホップアップ
             });
         })
-    </script>
 
-    //フェードインボタン
-    <script>
-    $('#fadeIn')
-    .on('click',function(){
-        $('.box').fadeIn();
-    })
-    </script>
+        //フェードインボタン
+        $('#fadeIn')
+        .on('click',function(){
+            $('.box').fadeIn();
+        })
 
-    //スライド
-    <script>
+        //スライドボタン
         $('slide')
         .on('click',function(){
-            //$('.box').fadeIn();
+            $('.box').slideUp();
         })
+
     </script>
-
-
 </body>
 </html>
