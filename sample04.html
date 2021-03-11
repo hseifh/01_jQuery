@@ -18,7 +18,7 @@
 <body>
 
     <!-- dl>dt+dd -->
-    <dl>
+    <dl class="menu">
         <dt>ニュース</dt>
         <dd>
             <ul>
@@ -44,5 +44,13 @@
 
     </dl>
     
+    <script src="jquery.min.js"></script> <!-- jqueryを取り込む -->
+    <script>
+        $('.menu dd').hide();
+        $('.menu dt').on('click',function(){
+
+        })
+    </script>
+
 </body>
 </html>
