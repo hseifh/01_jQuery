@@ -21,7 +21,8 @@ dd{
 
 dd li{
     list-style: none;
-    margin: .5em;
+    /*margin: .5em; は開いた瞬間上に動く*/
+    padding-bottom: .5em;
 }
 
 dd li:before{
