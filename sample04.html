@@ -68,8 +68,11 @@
         })
 
         $(document).ready(function() {
-            $('.menu li').each((function() {
-
+            $('.menu li').each(function() {
+                if($(this).hasClass('active')){
+                    $(this).parents('dd').show()
+                    .prev().addClass('active');
+                }
             })
         })
     </script>
