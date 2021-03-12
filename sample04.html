@@ -61,10 +61,16 @@
 
             $(this).addClass('active');
 
-            //見出しを白く  parents親の中の'dd'  の前(prev)の'dt'
-            $(this).parents('dd').prev('dt');
+            //見出しを白く  parents親の中の'dd'  の前(prev)'dt'
+            $(this).parents('dd').prev().addClass('active');
 
 
+        })
+
+        $(document).ready(function() {
+            $('.menu li').each((function() {
+
+            })
         })
     </script>
 
