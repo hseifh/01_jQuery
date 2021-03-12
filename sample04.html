@@ -50,7 +50,13 @@
         $('.menu dt').on('click',function(){
             //alert("クリックされたよ");
             //dt(this)の次(next)のddをslideDownする
-            $(this).next().slideDown();
+            //$(this).next().slideDown();
+            $(this).next().slideToggle();
+        })
+
+        //クリックしたらクラス化する
+        $('.menu li').on('click',function(){
+            $(this).addClass('active');
         })
     </script>
 
