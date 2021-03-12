@@ -56,7 +56,15 @@
 
         //クリックしたらクラス化する
         $('.menu li').on('click',function(){
+            //別のactiveを消す
+            $('.active').removeClass('active');
+
             $(this).addClass('active');
+
+            //見出しを白く  parents親の中の'dd'  の前(prev)の'dt'
+            $(this).parents('dd').prev('dt');
+
+
         })
     </script>
 
