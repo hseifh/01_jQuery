@@ -70,8 +70,8 @@
         $(document).ready(function() {
             $('.menu li').each(function() {
                 if($(this).hasClass('active')){
-                    $(this).parents('dd').show()
-                    .prev().addClass('active');
+                    $(this).parents('dd').prev().addClass('active');
+                    $(this).parents('dd').show();
                 }
             })
         })
