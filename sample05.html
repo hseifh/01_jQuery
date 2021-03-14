@@ -10,6 +10,11 @@
 
     <div id="container">
         <h1>曜日</h1>
+
+
+        <ul>
+            <li v-for = "w in weeks">{{w}}</li>
+        </ul>
     </div>
 
     <!-- jqueryを取り込む -->
@@ -18,13 +23,22 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     
     <script>
+        var app = new Vue({
+            el: '#container',
+            data: {
+                weeks: ['日','月','火','水','木','金','土']
+            }
+
+        })
+
+        /*
         var weeks = ['日','月','火','水','木','金','土']
         $('#container').append('<ul>')
         for(var i = 0; i < weeks.length; i++){
             $('#container  ul')
                 .append('<li>' + weeks[i] + '</li>');
         }
-
+        */
 
         /*
         $('<img>')
