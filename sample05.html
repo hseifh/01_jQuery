@@ -9,18 +9,17 @@
 <body>
 
     <div id="container">
-
+        <h1>写真館</h1>
     </div>
 
     <script src="jquery.min.js"></script> <!-- jqueryを取り込む -->
 
     <script>
         var img  = $('<img>');
-        img.attr('src','https://picsum.photos/200/300');
-        img.attr('alt','写真');
-        $('#container').append(img);
-
-        
+        img.attr('src','https://picsum.photos/200/300')
+        .attr('alt','写真')
+        //$('#container').append(img);
+        .appendTo('#container');
     </script>
     
 </body>
