@@ -9,12 +9,21 @@
 <body>
 
     <div id="container">
-        <h1>写真館</h1>
+        <h1>曜日</h1>
     </div>
 
-    <script src="jquery.min.js"></script> <!-- jqueryを取り込む -->
-
+    <!-- jqueryを取り込む -->
+    <script src="jquery.min.js"></script>
+    <!-- vue.jsを取り込む -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
     <script>
+        var weeks = ['日','月','火','水','木','金','土']
+        $('#container').append('<ul>')
+        for(var i = 0; i < weeks.length; i++){
+            $('#container  ul')
+                .append('<li>' + weeks[i] + '</li>');
+        }
 
 
         /*
@@ -24,7 +33,7 @@
         //$('#container').append(img);
             .appendTo('#container');
         */
-       
+
     </script>
     
 </body>
