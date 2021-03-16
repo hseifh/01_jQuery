@@ -23,7 +23,8 @@
                         html += '<li>' + json.items[i].title + '</li>'
                     }
                     html += '<ul>'
-                    console.log(json)
+                    document.getElementById('news').innerHTML = html;
+                    //console.log(json)
                 }
             }
         }
