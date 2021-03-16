@@ -17,7 +17,8 @@
         ajax.onload = function(e){
             if(ajax.readyState === 4){
                 if(ajax.status === 200){
-                    var json = ajax.responseText;
+                    var json = JSON.parse(ajax.responseText);
+                    var html = '<ul>'
                     console.log(json)
                 }
             }
