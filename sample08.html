@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- axiosを取り込む -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
     <script>
         var app = new Vue({
             el: '#news',
@@ -25,10 +26,9 @@
             },
             mounted: function(){
                 var self = this;
-                $.getJSON('feed.json',function(json){
-                    self.items = json.items;
-                })
-                
+                axios.get('feed.json').then(function(res){
+                    self.items = res.data.items;
+                });
             }
         })
     </script>
