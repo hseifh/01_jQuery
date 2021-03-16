@@ -7,6 +7,10 @@
     <title>Ajax</title>
 </head>
 <body>
+    <div id="news">
+
+    </div>
+
     <script>
         var ajax = new XMLHttpRequest();
         ajax.open('GET','feed.json',true)
@@ -19,7 +23,7 @@
             }
         }
         ajax.send(null)
-        
+
     </script>
 </body>
 </html>
